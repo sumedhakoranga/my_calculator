@@ -1,0 +1,33 @@
+.App {
+  display:flex;
+  justify-content: center;
+  background-color: black;
+  .calculator { 
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+  .calculator >*{   
+    margin:1px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    padding:30px;
+    background-color: rgba(58, 58, 88, 0.78);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 38px -19px 108px -5px rgba(0,0,0,0.4),
+    0px 7px 13px -3px rgba(0,0,0,0.3),
+    0px -3px 0px 0px rgba(0,0,0,0.2) inset;
+    
+  }
+  .row{
+    grid-column: 1/-1;
+  }
+  #display, #clear{
+    display:flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+}
